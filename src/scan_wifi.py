@@ -6,7 +6,7 @@ import os
 LOG_FILE = "../data/wifi_log.csv"
 
 def scan_wifi():
-    result = subprocess.check_output(["sudo", "iwlist", "wlan0", "scan"]).decode("utf-8")
+    result = subprocess.check_output(["iwlist", "wlan0", "scan"]).decode("utf-8")
     cells = result.split("Cell")
     wifi_data = []
 
