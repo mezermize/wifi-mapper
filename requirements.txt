@@ -1,0 +1,4 @@
+pandas
+folium
+gpsd-py3
+
